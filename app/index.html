@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+</head>
+
+<body>
+
+<h1>Log In</h1>
+<div ng-app="myApp" ng-controller="usersController"> 
+
+<!-- <ul>
+  <li ng-repeat="x in names">
+    {{ x.id + ', ' + x.name }}
+  </li>
+</ul> -->
+
+ <select data-native-menu="false" data-role="listview">
+            <option ng-repeat="x in names" value="{{x.id}}">{{x.name}}</option>	
+ </select>
+
+</div>
+
+<button>Login</button>
+
+<script src="app.js"></script>
+<script src="Controllers.js"></script>
+
+</body>
+</html>
